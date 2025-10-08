@@ -1,0 +1,101 @@
+.sensors-container {}
+
+.sensors-search-container {}
+
+.select-group {
+    background-color: transparent;
+    font-size: 0.75vw;
+    color: black;
+    border: 1px solid #eaf7ff;
+    height: 4vh;
+    width: 10vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    border-radius: 0.4vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sensors-content-container {
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.sensors-map-container {
+    width: 40vw;
+    height: 50vh;
+    border-radius: 0.5vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sensors-map {
+    border-radius: 0.5vw;
+}
+
+.sensors-charts-container {
+    padding-left: 1vw;
+    width: 35vw;
+    height: 50vh;
+}
+
+.charts-wrapper {
+    width: 35vw;
+    height: 24.5vh;
+    margin-bottom: 0.5vh;
+    border-radius: 0.5vw;
+    padding-right: 0.5vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sensors-cards-wrapper {
+    width: 35vw;
+    height: 24.5vh;
+    margin-top: 0.5vh;
+    border-radius: 0.5vw;
+    padding-right: 0.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-data {
+    width: 10vw;
+    height: 24.5vh;
+    border-radius: 0.5vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 0.8vw;
+}
+
+.battery-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #9c9c9c;
+}
+
+.battery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.battery-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wifi-icon {
+    margin-right: 5px;
+}
+
+.text-start {
+    font-weight: bold;
+
+}
+
+.text-end {
+    font-size: 1.4vw;
+}
