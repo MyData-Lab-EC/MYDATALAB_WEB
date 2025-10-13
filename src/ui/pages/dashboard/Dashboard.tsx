@@ -5,6 +5,7 @@ import './Dashboard.scss';
 function Dashboard() {
 
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+    const [currentOption, setCurrentOption] = useState("INICIO");
     const navigate = useNavigate();
 
     const handleToggleSidebar = () => {
@@ -25,13 +26,13 @@ function Dashboard() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/dashboard">
+                            <Link to="/dashboard" onClick={() => setCurrentOption("INICIO")}>
                                 <span className="material-icons">home</span>
                                 {!isSidebarCollapsed && <span>INICIO</span>}
                             </Link>
                         </li>
                         <li>
-                            <Link to="sensors">
+                            <Link to="sensors" onClick={() => setCurrentOption("SENSORES")}>
                                 <span className="material-icons">sensors</span>
                                 {!isSidebarCollapsed && <span>SENSORES</span>}
                             </Link>
@@ -43,10 +44,10 @@ function Dashboard() {
                             </a>
                         </li>
                         <li>
-                            <a >
+                            <Link to="reports" onClick={() => setCurrentOption("REPORTES")}>
                                 <span className="material-icons">assignment</span>
                                 {!isSidebarCollapsed && <span>REPORTES</span>}
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a >
@@ -62,7 +63,7 @@ function Dashboard() {
             <div className="main">
                 {/* Topbar */}
                 <div className="topbar">
-                    <span>Panel de Control</span>
+                    <span className='header-title'>{currentOption}</span>
                     <button className="logout-button" onClick={() => navigate("/")}>
                         <span className="material-icons Logout-icon">account_circle</span>
                         Login Out

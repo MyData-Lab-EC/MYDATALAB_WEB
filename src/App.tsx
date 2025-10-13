@@ -4,6 +4,7 @@ import Login from "./ui/pages/login/Login";
 import Dashboard from "./ui/pages/dashboard/Dashboard";
 import Home from "./ui/pages/home/Home";
 import Sensors from "./ui/pages/sensors/Sensors";
+import Reports from "./ui/pages/reports/Reports";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />}>
         <Route index element={<Home />} />
         <Route path="sensors" element={<Sensors />} />
+        <Route path="reports" element={<Reports />} />
       </Route>
     </Routes>
   );
