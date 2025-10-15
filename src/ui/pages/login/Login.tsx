@@ -7,8 +7,6 @@ export default function Login() {
     const [isRegister, setIsRegister] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [loggedIn, setLoggedIn] = useState(false);
-
     const navigate = useNavigate();
 
     // Valores quemados para simulación

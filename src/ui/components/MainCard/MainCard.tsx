@@ -11,7 +11,7 @@ interface SparklineDataPoint {
 
 // Define la interfaz para las props del componente MainCard
 interface MainCardProps {
-    type: string;
+    // type: string;
     nombre: string,
     battery: "Critical" | "Warnning" | "Normal";
     unit: string;
@@ -21,7 +21,7 @@ interface MainCardProps {
 }
 
 const MainCard: React.FC<MainCardProps> = ({
-    type,
+    // type,
     nombre,
     battery,
     unit,

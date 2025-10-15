@@ -15,7 +15,7 @@ const Sensors: React.FC = () => {
     const defaultSensor = location.state?.defaultSensor ?? "";
 
     const [selectedGroup, setSelectedGroup] = useState<string>(defaultGroup);
-    const [currentSensor, setCurrentSensor] = useState<String>(defaultSensor);
+    const [currentSensor] = useState<String>(defaultSensor);
     const [selectedSensor, setSelectedSensor] = useState<any>();
 
     // Obtenemos el grupo actualmente seleccionado

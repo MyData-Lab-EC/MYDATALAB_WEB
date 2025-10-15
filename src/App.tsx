@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import LandingPage from "./ui/pages/landingPage/LandingPage";
 import Login from "./ui/pages/login/Login";
 import Dashboard from "./ui/pages/dashboard/Dashboard";
@@ -8,17 +8,15 @@ import Reports from "./ui/pages/reports/Reports";
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />}>
-          <Route index element={<Home />} />
-          <Route path="sensors" element={<Sensors />} />
-          <Route path="reports" element={<Reports />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />}>
+        <Route index element={<Home />} />
+        <Route path="sensors" element={<Sensors />} />
+        <Route path="reports" element={<Reports />} />
+      </Route>
+    </Routes>
   );
 }
 
