@@ -8,15 +8,17 @@ import Reports from "./ui/pages/reports/Reports";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />}>
-        <Route index element={<Home />} />
-        <Route path="sensors" element={<Sensors />} />
-        <Route path="reports" element={<Reports />} />
-      </Route>
-    </Routes>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route index element={<Home />} />
+          <Route path="sensors" element={<Sensors />} />
+          <Route path="reports" element={<Reports />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
